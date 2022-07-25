@@ -5,7 +5,7 @@ boolean gameStart;
 int bombsLeft;
 int topBorder = 70;
 int MODE = 0;
-int WaitTime = 50;
+int WaitTime = 10;
 
 void setup() {
   size(1500, 800); //standard expert board dimensions
@@ -17,6 +17,9 @@ void setup() {
 }
 
 void draw() {
+  brc();
+  brcSetMonitor("bombsLeft", bombsLeft);
+  
   if (!gameOver) {
     background(255);
     //board drawing. -1 is a mine, -2 is unexplored, -3 is a flag, non-negative ints are adjacent bomb counts
