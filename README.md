@@ -11,6 +11,7 @@ This is a recreation of the game Mine Sweeper in Processing with the addition of
   - Implement logical deduction
   - Debug/Test mode?
   - Clean up UI
+  - Comment old code
 
 ## Credits
 - This program uses some functionality from http://www.micromind.com/processing/brc/BRCWebService.html to assist in displaying information.
