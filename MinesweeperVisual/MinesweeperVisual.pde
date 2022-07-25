@@ -65,9 +65,9 @@ void draw() {
     }
 
     //bomb counter
-    fill(0);
-    textSize(16);
-    text("Mines Left: " + bombsLeft, 0, 16);
+    //fill(0);
+    //textSize(16);
+    //text("Mines Left: " + bombsLeft, 0, 16);
   } else {//reveals board when a mine is opened 
     background(255);
     for (int i = 0; i < m.ROWS; i++) {
@@ -123,9 +123,9 @@ void draw() {
         text(""+m.MIND[i][j], j*size+size/2-20, i*size+size/2-10);
       }
     }
-    fill(0);
-    textSize(16);
-    text("Mines Left: " + bombsLeft, 0, 16);
+    //fill(0);
+    //textSize(16);
+    //text("Mines Left: " + bombsLeft, 0, 16);
   }
 
   if (MODE == 1 && frameCount % WaitTime == 0 && gameStart && !gameOver) {
